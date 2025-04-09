@@ -1,4 +1,4 @@
-# SQL Projects
+# Influenza Insights: A Data-Driven Analysis
 
 This repository contains a collection of SQL queries I’ve worked on for data analysis projects. These queries demonstrate skills in data extraction, transformation, and analysis.
 

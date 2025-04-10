@@ -84,36 +84,36 @@ Based on this analysis, I’d recommend:
 
 ## 📁 Repository Structure
 
-📁 Influenza Insights: A Data-Driven Analysis
+Influenza Insights: A Data-Driven Analysis
 │
-├── 📊 Data Visualization & Storytelling 2.1–2.10
-│   ├── 📁 Data
-│   │   ├── 📂 Cleaned        -- Cleaned Excel datasets
-│   │   └── 📂 Raw            -- Original/raw Excel files
-│   ├── 📁 Docs
-│   │   ├── 📄 Answers        -- PDF submissions for lessons (2.1–2.9)
-│   │   └── 📄 References     -- Notes, summaries, background research
-│   └── 📁 Tableau
-│       ├── 📂 Dashboards     -- Tableau workbooks (.twb)
-│       └── 📂 Extracts       -- Tableau data extracts (.hyper)
+├── Data Visualization & Storytelling 2.1–2.10
+│   ├── Data
+│   │   ├── Cleaned       # Cleaned Excel datasets
+│   │   └── Raw           # Original/raw Excel files
+│   ├── Docs
+│   │   ├── Answers       # PDF submissions for lessons (2.1–2.9)
+│   │   └── References    # Notes, summaries, background research
+│   └── Tableau
+│       ├── Dashboards    # Tableau workbooks (.twb)
+│       └── Extracts      # Tableau data extracts (.hyper)
 │
-├── 📋 Preparing & Analyzing Data 1.1–1.10
-│   ├── 📁 Data
-│   │   ├── 📂 Cleaned        -- Transformed Excel datasets
-│   │   └── 📂 Raw            -- Raw lab/test/visit files
-│   ├── 📁 Excel Analysis
-│   │   ├── 📝 Project Notes  -- Reflections + milestone summaries
-│   │   └── 📚 References     -- Research docs + topic folders (1.4–1.6)
-│   └── 📁 Submissions
-│       └── 📄 Final Report   -- 1.10 interim report (.docx)
+├── Preparing & Analyzing Data 1.1–1.10
+│   ├── Data
+│   │   ├── Cleaned       # Transformed Excel datasets
+│   │   └── Raw           # Raw lab/test/visit files
+│   ├── Excel Analysis
+│   │   ├── Project Notes # Reflections + milestone summaries
+│   │   └── References    # Topic docs (1.4–1.6), PDFs
+│   └── Submissions
+│       └── Final Report  # 1.10 interim report (.docx)
 │
-└── 🧪 SQL Influenza Mortality Trends
-    ├── 📁 Data
-    │   ├── 📂 Cleaned        -- Cleaned + structured CSVs
-    │   └── 📂 Raw            -- Raw source datasets
-    └── 📁 SQL
-        ├── 📄 Docs           -- PDF report
-        └── 📜 Queries        -- SQL scripts for analysis
+└── SQL Influenza Mortality Trends
+    ├── Data
+    │   ├── Cleaned       # Cleaned + structured CSVs
+    │   └── Raw           # Raw source data
+    └── SQL
+        ├── Docs          # PDF report
+        └── Queries       # SQL scripts for analysis
 
 
 

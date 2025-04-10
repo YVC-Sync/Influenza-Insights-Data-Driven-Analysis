@@ -48,7 +48,7 @@ Working with large datasets from CDC and NIS required:
 - 💉 **Vaccine vs. Mortality:** Are more shots saving lives?  
 - 🧬 **Risk Factors:** How do chronic conditions shift the numbers?
 
-![Sample Dashboard Preview](https://raw.githubusercontent.com/your-username/your-repo/main/path-to-image.png)
+![Dashboard Preview](./Influenza-Insights-A-Data-Driven-Analysis-YVC.png)
 
 ---
 

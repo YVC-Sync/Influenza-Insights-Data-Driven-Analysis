@@ -84,8 +84,6 @@ Based on this analysis, I’d recommend:
 
 ## 📁 Repository Structure
 
-## 📁 Repository Structure
-
 ```sql
 Influenza Insights: A Data-Driven Analysis/
 

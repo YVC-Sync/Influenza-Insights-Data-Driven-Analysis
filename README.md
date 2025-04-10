@@ -84,22 +84,38 @@ Based on this analysis, I’d recommend:
 
 ## 📁 Repository Structure
 
+## 📁 Repository Structure
+
+```sql
 Influenza Insights: A Data-Driven Analysis/
-│
-├── Data Visualization & Storytelling 2.1–2.10/       → Excel files, lesson PDFs, and Tableau dashboards
-│   ├── Data/                                          → Cleaned and raw Excel datasets
-│   ├── Docs/                                          → Project answers, research notes, submission PDFs
-│   └── Tableau/                                       → Workbook (.twb) files and data extracts (.hyper)
-│
-├── Preparing & Analyzing Data 1.1–1.10 Project/       → Pre-cleaning, milestone reports, final interim write-up
-│   ├── Data/                                          → Raw and cleaned Excel datasets
-│   ├── Excel Analysis/                                → Reflections, analysis notes, topic docs
-│   └── Submissions/                                   → Interim report (.docx) for 1.10
-│
-└── SQL Influenza Mortality Trends/                    → Queries and visuals for flu mortality SQL analysis
-    ├── Data/                                          → Cleaned and raw CSV datasets
-    ├── SQL/                                           → Query scripts and PDF report
-    └── Docs/                                          → Final write-up (PDF format)
+
+├── 📊 Data Visualization & Storytelling 2.1 – 2.10
+│   ├── Data/
+│   │   ├── Cleaned       # Cleaned Excel datasets
+│   │   └── Raw           # Original/raw Excel files
+│   ├── Docs/
+│   │   ├── Answers       # PDF lesson submissions (2.1–2.9)
+│   │   └── References    # Notes, summaries, research PDFs
+│   └── Tableau/
+│       ├── Dashboards   # Tableau workbook files (.twb)
+│       └── Extracts     # Tableau extracts (.hyper)
+
+├── 🧪 Preparing & Analyzing Data 1.1 – 1.10 Project
+│   ├── Data/
+│   │   ├── Cleaned       # Cleaned/merged Excel datasets
+│   │   └── Raw           # Lab test and visit files
+│   ├── Excel Analysis/
+│   │   ├── Project Notes # Reflection docs + milestone summaries
+│   │   ├── References    # Research docs (1.4–1.6)
+│   │   └── Submissions   # Final interim report (1.10)
+
+├── 📉 SQL Influenza Mortality Trends
+│   ├── Data/
+│   │   ├── Clean         # Cleaned CSVs for SQL
+│   │   └── Raw           # Raw source data
+│   └── SQL/
+│       ├── Docs          # Project write-up PDF
+│       └── Queries       # SQL scripts for analysis
 
 
 

@@ -114,6 +114,3 @@ Influenza Insights: A Data-Driven Analysis
     └── SQL
         ├── Docs          # Project write-up PDF
         └── Queries       # SQL scripts for analysis
-
-
-

@@ -90,32 +90,32 @@ Based on this analysis, I’d recommend:
 Influenza Insights: A Data-Driven Analysis/
 
 ├── 📊 Data Visualization & Storytelling 2.1 – 2.10
-│   ├── Data/
+│   ├── Data
 │   │   ├── Cleaned       # Cleaned Excel datasets
 │   │   └── Raw           # Original/raw Excel files
-│   ├── Docs/
+│   ├── Docs
 │   │   ├── Answers       # PDF lesson submissions (2.1–2.9)
 │   │   └── References    # Notes, summaries, research PDFs
-│   └── Tableau/
+│   └── Tableau
 │       ├── Dashboards   # Tableau workbook files (.twb)
 │       └── Extracts     # Tableau extracts (.hyper)
-
+│ 
 ├── 🧪 Preparing & Analyzing Data 1.1 – 1.10 Project
-│   ├── Data/
+│   ├── Data
 │   │   ├── Cleaned       # Cleaned/merged Excel datasets
 │   │   └── Raw           # Lab test and visit files
-│   ├── Excel Analysis/
+│   ├── Excel Analysis
 │   │   ├── Project Notes # Reflection docs + milestone summaries
 │   │   ├── References    # Research docs (1.4–1.6)
 │   │   └── Submissions   # Final interim report (1.10)
-
+│ 
 ├── 📉 SQL Influenza Mortality Trends
-│   ├── Data/
-│   │   ├── Clean         # Cleaned CSVs for SQL
-│   │   └── Raw           # Raw source data
-│   └── SQL/
-│       ├── Docs          # Project write-up PDF
-│       └── Queries       # SQL scripts for analysis
+    ├── Data
+    │   ├── Clean         # Cleaned CSVs for SQL
+    │   └── Raw           # Raw source data
+    └── SQL
+        ├── Docs          # Project write-up PDF
+        └── Queries       # SQL scripts for analysis
 
 
 

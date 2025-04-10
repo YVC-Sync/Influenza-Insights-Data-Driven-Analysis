@@ -85,7 +85,7 @@ Based on this analysis, I’d recommend:
 ## 📁 Repository Structure
 
 ```sql
-Influenza Insights: A Data-Driven Analysis/
+Influenza Insights: A Data-Driven Analysis
 
 ├── 📊 Data Visualization & Storytelling 2.1 – 2.10
 │   ├── Data

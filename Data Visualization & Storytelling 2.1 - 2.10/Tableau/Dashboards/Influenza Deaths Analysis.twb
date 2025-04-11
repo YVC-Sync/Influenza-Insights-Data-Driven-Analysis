@@ -1,0 +1,914 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='InfluenzaDeathsAnalysis_17326604317670' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Data set (Influenza Data Set Raw Data)' inline='true' name='federated.15sp2xl0ejwu3h14k0jgt0zus740' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Influenza Data Set Raw Data' name='excel-direct.0hi2sgh1uyx7gb19bdh3w1em45vj'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/lesir/Desktop/YVC/Data Analytics (CF)/Data Visualization &amp; Storytelling 2.1 - 2.10/Data Group/Influenza Data Set Raw Data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0hi2sgh1uyx7gb19bdh3w1em45vj' name='Data set' table='[&apos;Data set$&apos;]' type='table'>
+          <columns gridOrigin='A1:H10001:no:A1:H10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='integer' name='State Code' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Month' ordinal='3' />
+            <column datatype='string' name='Month Code' ordinal='4' />
+            <column datatype='string' name='Ten-Year Age Groups' ordinal='5' />
+            <column datatype='string' name='Ten-Year Age Groups Code' ordinal='6' />
+            <column datatype='integer' name='Deaths' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data set]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H10001:no:A1:H10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Data set]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State Code]</local-name>
+            <parent-name>[Data set]</parent-name>
+            <remote-alias>State Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Data set]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[Data set]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Month Code]</local-name>
+            <parent-name>[Data set]</parent-name>
+            <remote-alias>Month Code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ten-Year Age Groups</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ten-Year Age Groups]</local-name>
+            <parent-name>[Data set]</parent-name>
+            <remote-alias>Ten-Year Age Groups</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ten-Year Age Groups Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ten-Year Age Groups Code]</local-name>
+            <parent-name>[Data set]</parent-name>
+            <remote-alias>Ten-Year Age Groups Code</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[Data set]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Deaths (bin)' datatype='integer' name='[Deaths (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Deaths]' peg='0' size='10' />
+      </column>
+      <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[State Code]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Ten-Year Age Groups]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Data set' datatype='table' name='[__tableau_internal_object_id__].[Data set_8577E07CA0784122B99D3270DE30B6B9]' role='measure' type='quantitative' />
+      <column-instance column='[Ten-Year Age Groups]' derivation='None' name='[none:Ten-Year Age Groups:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/lesir/Downloads/Data set (Influenza Data Set Raw Data).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/26/2024 10:30:50 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Data set (Influenza Data Set Raw Data)' increment-value='%null%' refresh-type='create' rows-inserted='60588' timestamp-start='2024-11-26 22:30:49.676' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Data set</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[State Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Data set</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Data set</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Data set</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>108</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month Code</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Data set</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>108</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ten-Year Age Groups</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ten-Year Age Groups]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ten-Year Age Groups</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Data set</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ten-Year Age Groups Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ten-Year Age Groups Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ten-Year Age Groups Code</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Data set</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Data set</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>196</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Data set_8577E07CA0784122B99D3270DE30B6B9]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Ten-Year Age Groups:nk]' palette='miller_stone_10_0' type='palette'>
+            <map to='#4f6980'>
+              <bucket>&quot;5-14 years&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;35-44 years&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;15-24 years&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;25-34 years&quot;</bucket>
+            </map>
+            <map to='#b66353'>
+              <bucket>&quot;75-84 years&quot;</bucket>
+            </map>
+            <map to='#bfbb60'>
+              <bucket>&quot;45-54 years&quot;</bucket>
+            </map>
+            <map to='#d7ce9f'>
+              <bucket>&quot;85+ years&quot;</bucket>
+            </map>
+            <map to='#f47942'>
+              <bucket>&quot;55-64 years&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;65-74 years&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Data set' id='Data set_8577E07CA0784122B99D3270DE30B6B9'>
+            <properties context=''>
+              <relation connection='excel-direct.0hi2sgh1uyx7gb19bdh3w1em45vj' name='Data set' table='[&apos;Data set$&apos;]' type='table'>
+                <columns gridOrigin='A1:H10001:no:A1:H10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='integer' name='State Code' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='string' name='Month' ordinal='3' />
+                  <column datatype='string' name='Month Code' ordinal='4' />
+                  <column datatype='string' name='Ten-Year Age Groups' ordinal='5' />
+                  <column datatype='string' name='Ten-Year Age Groups Code' ordinal='6' />
+                  <column datatype='integer' name='Deaths' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Age Group Deaths Box Plot'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Lexend' fontsize='14'>Distribution of Influenza Deaths Across Ten-Year Age Groups</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='12'>This box plot shows how influenza deaths are spread across age groups. It highlights the median, range, and outliers for each group. The 85+ age group has the most variation, while younger groups have lower and more consistent numbers. This helps show which ages are most affected by the flu.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data set (Influenza Data Set Raw Data)' name='federated.15sp2xl0ejwu3h14k0jgt0zus740' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15sp2xl0ejwu3h14k0jgt0zus740'>
+            <column aggregation='None' caption='Deaths (bin)' datatype='integer' name='[Deaths (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Deaths]' peg='0' size='10' />
+            </column>
+            <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Ten-Year Age Groups]' role='dimension' type='nominal' />
+            <column-instance column='[Deaths (bin)]' derivation='None' name='[none:Deaths (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Ten-Year Age Groups]' derivation='None' name='[none:Ten-Year Age Groups:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[sum:Deaths:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.15sp2xl0ejwu3h14k0jgt0zus740].[sum:Deaths:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[sum:Deaths:qk]' field-type='quantitative' max='120000' min='0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[sum:Deaths:qk]' scope='rows' value='Number of Deaths' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' value='Lexend' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' scope='rows' value='Lexend' />
+            <format attr='text-orientation' field='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[none:Ten-Year Age Groups:nk]' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Lexend' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Lexend' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Lexend' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[none:Ten-Year Age Groups:nk]' />
+              <lod column='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[none:Deaths (bin):ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[sum:Deaths:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[sum:Deaths:qk]' z-order='1' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='90' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Lexend' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15sp2xl0ejwu3h14k0jgt0zus740].[sum:Deaths:qk]</rows>
+        <cols>[federated.15sp2xl0ejwu3h14k0jgt0zus740].[none:Ten-Year Age Groups:nk]</cols>
+      </table>
+      <simple-id uuid='{DF936771-0E6C-45AA-A268-DFEA63138FC1}' />
+    </worksheet>
+    <worksheet name='Age Group Deaths Histogram'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Lexend' fontsize='14'>Distribution of Influenza Deaths by Age Group</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Lexend' fontsize='12'>This histogram shows how flu deaths are spread across age groups. The colors highlight different ten-year categories, with the 85+ group standing out due to higher deaths. The x-axis groups death counts, and the y-axis shows how often they occur.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data set (Influenza Data Set Raw Data)' name='federated.15sp2xl0ejwu3h14k0jgt0zus740' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15sp2xl0ejwu3h14k0jgt0zus740'>
+            <column aggregation='None' caption='Deaths (bin)' datatype='integer' name='[Deaths (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Deaths]' peg='0' size='10' />
+            </column>
+            <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Ten-Year Age Groups]' role='dimension' type='nominal' />
+            <column-instance column='[Deaths (bin)]' derivation='None' name='[none:Deaths (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Ten-Year Age Groups]' derivation='None' name='[none:Ten-Year Age Groups:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Deaths]' derivation='Sum' name='[pcto:sum:Deaths:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Deaths]' derivation='Sum' name='[sum:Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[sum:Deaths:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.15sp2xl0ejwu3h14k0jgt0zus740].[sum:Deaths:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[sum:Deaths:qk]' scope='rows' value='Frequency of Deaths' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[pcto:sum:Deaths:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[none:Ten-Year Age Groups:nk]' />
+              <text column='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[pcto:sum:Deaths:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='10' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15sp2xl0ejwu3h14k0jgt0zus740].[sum:Deaths:qk]</rows>
+        <cols>[federated.15sp2xl0ejwu3h14k0jgt0zus740].[none:Deaths (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.15sp2xl0ejwu3h14k0jgt0zus740].[Deaths (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{2FF3D387-7404-43B9-B2C8-DB79A986FC79}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Age Group Deaths Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[none:Ten-Year Age Groups:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.15sp2xl0ejwu3h14k0jgt0zus740].[none:Deaths (bin):ok]</field>
+            <field>[federated.15sp2xl0ejwu3h14k0jgt0zus740].[none:Ten-Year Age Groups:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A7C41FE5-EB40-4C50-995E-897DD3EFF83B}' />
+    </window>
+    <window class='worksheet' name='Age Group Deaths Box Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.15sp2xl0ejwu3h14k0jgt0zus740].[none:Ten-Year Age Groups:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.15sp2xl0ejwu3h14k0jgt0zus740].[none:Ten-Year Age Groups:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ADD98A08-4571-43E2-B47E-7393AB8B4FFC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Age Group Deaths Box Plot' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAOmUlEQVR4nO3d22+b93nA8e974PkoUaIoS7YUyZHtJI6Txms2NG3adGu6pS0wYBcD9lfl
+      Zhe7GAYMW4ABQXeZZHAboFu6xUl9kA+SY8k6S5R4PpMv+f524SZdJsYWHZIu/Xs+V4ZI0I9l
+      fUHyfR++MpRSCiE0ZT7tAYR4mux+Plin08F1XQzD6OfDCjEwJw7AbTdZ29xnKu7n/m6e+VSU
+      7aMqyUSUsYifYsNgKhEDwLKsgQ0sRD+d+CWQgUk2cwS2n2bxkFtrO0SsGld/d42Pfv3fjMWj
+      g5xTiIHoIYAOR4dpdtfukK4qgqbL1kGBcDjCpXOnebCTHuScQgyE8eRHgRRKcez1fqfTkZdA
+      YmR8izfBBvJeV4w6OQwqtCYBCK1JAEJrEoDQmgQgtCYBCK1JAEJrEoDQWg8nwlw+/e1VXrq4
+      xMp6mskQbGcqxONRkhEvTTvOTDI+uEmFGIAeAjDw+Tx4QnFUe4O9jMPMuJ9rK6usKA8/f+ft
+      r9ah5TM2YlT0FECjWiCbyVAslZidmmA3W+O55xaZn4qxuXvI2TNTgKxDi9Ehy3BCa7IMJ7Qm
+      R4GE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBakwCE1iQAobUTr0JUixnW94tErCbpksP0
+      eIC9owrxsSiTES8NK8bMZGyQswrRdydehlOuy7Xrv8NpuyQCBmt5xfmUn2urm7jKw89/9jam
+      cuXq0GKknDiARqXAJ1eXmZ6MkK+0mYj5OCrUCIRCLEzFOGp6ef7MlGyDipHS+zq0UijAMJB1
+      aDHyel+HNgyMP/xRiJEmR4GE1iQAoTUJQGhNAhBakwCE1iQAoTUJQGhNAhBakwCE1no+E6yU
+      wnVdTNPEdRWG8XAdQimFaUpPYrT0HMCd61dJ56vEYhEq1Tp2IEgqbBOYeI5Tk/Lb4sVo6TmA
+      UChMfn0XyxfgzFSUm19sUcj4+eHCi3J1aDFynuDiuC5bW7sEbMVutspYPMx0Ikq66HB6ekK2
+      QcVI+RZXh+5OAhCjRN61Cq1JAEJrEoDQmgQgtCYBCK1JAEJrEoDQmgQgtCYBCK1JAEJrT7QO
+      /dWfgf97bSy5JqgYNT0HsLr8OXu5JlOJIJl8BW8wTCpi4x0/I1eHFiOn5wDKpQqNeotM2WYu
+      FePG6iaZQx8/fu4FWYcWI6fnbdD9rTX28w2mEyH2s1XG4hFmJqLsFx3mTk3KNqgYKbIOLbQm
+      R4GE1iQAoTUJQGhNAhBakwCE1iQAobVvDGBtY1tOaIln3rEAWo7Dzl6af3rv3/nVf/7P05hJ
+      iKE5FkC93uTv//E9xuJRXlw6+zRmEmJojp0J3k8fkT7K4rou33n5hZ4fUM4Ei1EiqxBCa123
+      QZXbplwq03RNJse/vuKc3n7A58urzM6myBcq+MNhUhEPVmyG2WR8KEML0S9dA6hnN/iH9z5m
+      cXGev37nz792W3JmhvG9PPV6k/lUlOurm6QNLz95+7ysQ4uR0zUATzjB2dlxEhOTx26r5TMs
+      nH8Bt7THTqbKSy9dZHYyxv5hlvmZJIC8BBIjo0sALsuf/hfFlsXZ+PFPeIUSpwgBxBZInf7D
+      1+fDA5tRiIHpciLMIBT046JoOa3hTyTEEHUN4MzCORKxkPzOL/HM6/oT7raq4IuxuXZ/2PMI
+      MVRdAwhMzFHZusnswvPDnkeIoeoaQCO/S7rqYX9nY8jjCDFcXQPwRJKMe+vMzMkukHi2dQ3g
+      11eu8PLlP2Hzwfqw5xFiqLqfCW7UOTrKUi41hj2PEEMly3BCa13PBH/4y3+lZidZOrfEi0vz
+      Qx9KiGHp8h7A5Ptv/QVOOUvd6Qx/IiGGqPvFcRtFoqcvkN5cgxcXv3ZTMf2AjaKHUCfLXqZC
+      MBJhKurFCKdkHVqMnK4BBJKLzB8uE3/hT4/ddvvufYq1Dv5ojOm4j/v7hzSKNhdenZd1aDFy
+      ur4JbhbTbJVMFmcSx/aBauU86UKDqZiP3WyVRCxEPBoiV6ozMR6XN8FipHQNoF3L8W+//ICl
+      ly9z+eJSTw8oAYhR0vVEWKuaZz/bIL23Pex5hBiqrgH4YikorGGFj38iTIhnSfdluMIer/70
+      76B8OOx5hBiqLgG43Fvfp7S7ij+WGP5EQgxR1xNhF5bOUG5ZJBNjw59IiCH6hs88Grhum44r
+      x/PFs61rAJYvzHjEj+u6w55HiKHqGoBhWPi8FvtpeRMsnm3fEICBz+dHddrDnkeIoeoawPLN
+      G+xvr1N1jGHPI8RQdV2Gi4SD4B/nre9959htucM9DotNZiYj7OdqJOJhokEfpYZLIh4Z+MBC
+      9FPXANrKYn52ivThEePRua/dtnH/HjU7TjGXJhaw+eTeCh7gB2/9WLZBxcjp+SOROxv3+WJ9
+      l1DYQ7PhUHM6zE2NYcdnOTs7KctwYqT0HECn7dBRBrYJrbaLbZtYpkmno7BtSwIQI0U+FC+0
+      Jle/FVqTAITWJAChNQlAaE0CEFqTAITWJAChNQlAaE0CEFqTAITWul8c91GUSyabJ+g1OMjX
+      GYuFiAS8lBou4zH5bdlitPS2C6QUD1aXufEgw6mxACG/xYN0Ea8B3/vBj/B7DFzXxTDkgzRi
+      NPT4DKCoNR0a5Ryd2DTFahuPZTKbjJPOFVk49fA6QrIMJ0bFE22DOo6DaSjqrQ4+j41tWzhO
+      B6/XI9ugYqTIOrTQmhwFElqTAITWJAChNQlAaE0CEFqTAITWJAChNQlAaE0CEFqTAITWel6H
+      LuWOyJQapCaiZAp1YtEAIb+PSqNDPBoaxIxCDEzvnwdo1/jk6jJnT48T9JjcvFMhYMB333hT
+      rg4tRk7PAdQcg7PTUZptMFQb24DkZJxsoUxkehyQdWgxOnreBm23GlSbbUI+D9WGg9/nweux
+      aTpt/D6fbIOKkSLr0EJrchRIaE0CEFqTAITWJAChNQlAaE0CEFqTAITWJAChNQlAaE0CEFrr
+      eRmuVa9wmK8yEQ+SLTWIhvwE/V6qzQ7RcHAQMwoxMD0HUCgU+OLOCuuBIBGvwfVCjaAJr/3Z
+      93FdV9ahxUjpOQC3XqRphxkzXTquwlQuY/EYhXKNSCCGaZqYpryyEqOh523QerVMudogGglR
+      bTgE/V78Pi/1pkMw4JdtUDFSZB1aaE1eqwitSQBCaxKA0JoEILQmAQitSQBCaxKA0JoEILQm
+      AQitSQBCaz0vwzmNCuu7WRJBg62jChPjMRIRH2XHQ2oiNogZhRiYngMwbR/FfJZCxiEZ93Pt
+      +nWUsnjnr96Wq0OLkdNzAKrdJHN0xMxUgq10ifGJSc6mYqzvpDk3lwLk6tBidHyLbVCFUmAY
+      xte+KtugYpT0/gsyvmLw/372hRg5chRIaE0CEFqTAITWJAChNQlAaE0CEFqTAITWJAChtSc+
+      EbZx7zY7mQqRWJSpiIe2f4LZZLyfswkxcE/8DJDOVzk9GeDB+n1+e+M+yUS0n3MJzXx273P+
+      +T/+hVqzPtS/94l3gbbXVtjN1YhEw8wlYxxWDBZOJ/u6C6SU4tObq+RLFd5+47Vje0d/DJRS
+      XFvdJBzw8fyZ1NBnbDQadDqdR95np7jHcnqF786+SiI49sj72raNz+fr54i8++67tNvtR94n
+      nT+k6TRJxifxe/2PvO+bb77J5cuX+zJbXy+N+OU69Ekujttqtbh9+/Zj7/dg5wCn3WHxzDTW
+      Yx53YWGBWOzxn0lQSp3oB7VYLLK+vv7I+7hKcZApYlkmU+OPfhYMBAKcP3/+sX9vLzNeuXKF
+      TCZzosc8ifn5eV5//fXH3u/LH5uTzPj+++8/NoBevPLKK5w7d+6x9zvJ91DLa4PKjN+e67oA
+      f9RXAj/J97Dv0/f6n1YrZrl58y6OUijVYWt7F1BkjtK03X5P1+uMiqODPWrNJiu3bpIpVAHY
+      31pj9zBPu1klUyg/3RmVy9rqHXL5PLeWlylUG6hOm9U7yxxkS9TLOYq1Vt/n6+Uy+KXcITdu
+      rZBJ73Frde2rZ4989ohm26VayFJpOH2f8STfw2+xDt0f6Z119jJtFhsNOiZsbGwyFjT48KOP
+      +cXf/C257Xt4/T52DwsUshkmklPUKiWCfj9V1wv1PM9ffI3kWHgg8xXSezQtg5W761yenKVS
+      ASyL9XurbLXzuJF5xl6e496DA1SrQj6bwQ6PoRpVOh4/VqOMJxDCCid45cJi3+dTnRaWaXDr
+      +ufkqh0mZ85QwyWzu0HHF+f2rd8wcemnvDCpWD+o0qnn2dtPMzmVolgsEQhFaRSP8ASCjKfO
+      sDQ/0/cZfV6blburOKUxanaERr1Gu1Xjgw8/4kc/+Us++9UHLL3xDrOBOvtlRflom0yuTOpU
+      iny+RDjkJ5evEglaJE49x+KZ6b7N9tSfvyLjKXztCtlSmUqtSa2U4zBfIeQzKZRqJCdiXPnN
+      dbyqTsPpUCmV8NiKTDrNqblFjHaFg6PigKYzaDsN8vkac3NJ0ulDcoUSt69dJRSPY3r85LM5
+      TE+A0u5dKo7NUSaLajvU2y7lcgHlCXFqMsbGxuagRuTqZ9dIzc4zOxkmfZAhl88Rn5olu7eJ
+      1x8il81iB8fZWP4E0/aQyVfotGo4yqZYzOEJx5mIeNnc2hnIiOVShdR4hMBEinq5SKVUIJcr
+      Eg76ONg/wBcKkc3lCcYmWb36McryUazUadUqKMumlM8QjCaJBWw2t/f7Olvf3wP0ynU7tDsu
+      Hvvhk5HTamF7vCjlYpoWdOrcuLvJpReXaLZaeL0eHKeNbVkYpkXbaWF5vFjmYI6+tJ0WyjBR
+      rovt8WAaD2dUhonHtnFdhWWZrCzfYO7CRWzXAdNGuW0M08I0DEDR6Si8Xk/f51NK0Wq1MC0L
+      5bp4PB4MHh5ksDxeTBQKA9OE5Rs3uHDxEq7TxLS9uG0H07IxDFCu+/t/U//fd7huB8fpYNsm
+      rnp4pMn4/dcNwwT15YwG169f49KlV2i1mtgeL23HwbIsDMNEuW2UYfV1xqcegBBP01N/CSTE
+      0yQBCK1JAEJrEoDQ2v8CsI4dmabybTwAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Age Group Deaths Histogram' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

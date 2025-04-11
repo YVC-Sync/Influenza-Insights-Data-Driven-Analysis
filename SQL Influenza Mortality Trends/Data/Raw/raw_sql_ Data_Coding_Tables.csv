@@ -1,0 +1,37 @@
+﻿Title,Code,Definition,Description,Numeric_Value
+AGY,A,5-14,"Represents school-aged children, typically at lower risk of severe influenza but key in community transmission.",
+AGY,B,15-24,"Includes teenagers and young adults, generally healthy but with varying vaccination rates.",
+AGY,C,25-34,"Covers young adults, some of whom may be parents or caregivers.",
+AGY,D,35-44,"Middle-aged adults, often working and parenting, who may have moderate risk.",
+AGY,E,45-54,"Higher risk starts to emerge, especially for those with underlying conditions.",
+AGY,F,55-64,"Pre-senior adults, at increased risk of flu complications.",
+AGY,G,65-74,"Early seniors, a priority group for flu vaccinations due to higher hospitalization risks.",
+AGY,H,75-84,"Older seniors, highly vulnerable to severe influenza cases and complications.",
+AGY,I,85+,"Elderly adults, the most at risk for flu-related mortality.",
+AGM,X,19-23,"Infants and toddlers, a key group for early childhood vaccinations.",
+AGM,Y,24-29,"Young children, transitioning to preschool age with continued vaccine monitoring.",
+AGM,Z,30-35,"Preschool-aged children, preparing for school entry where flu transmission risks increase.",
+EDU,Y1,< 12 YEARS,Less than 12 years of education.,
+EDU,Y2,12 YEARS,Completed high school education.,
+EDU,Y3,"> 12 YEARS, NON-COLLEGE GRAD",More than 12 years of education but did not graduate college.,
+EDU,Y4,COLLEGE GRAD,Completed college education.,
+PVR,P1,BELOW POVERTY,Income is below the poverty threshold.,
+PVR,P2,"ABOVE POVERTY, ≤ $75K","Income is above poverty but does not exceed $75,000.",
+PVR,P3,"ABOVE POVERTY, > $75K","Income is above $75,000.",
+PVR,P4,UNKNOWN,Income information is not available.,
+INC,I1,"$0 - $7,500","Lowest income bracket, often associated with financial hardship.",11
+INC,I2,"$7,501 - $10,000","Very low income, potential eligibility for government assistance.",12
+INC,I3,"$10,001 - $17,500","Low-income range, likely to experience financial constraints.",13
+INC,I4,"$17,501 - $20,000","Lower-middle income, may struggle with financial stability.",14
+INC,I5,"$20,001 - $25,000","Moderate lower income, can afford basic needs with some limitations.",15
+INC,I6,"$25,001 - $30,000","Lower middle-class income, stable but with limited savings potential.",16
+INC,I7,"$30,001 - $35,000","Moderate income, can afford necessities with occasional discretionary spending.",17
+INC,I8,"$35,001 - $40,000","Middle-class income, stable financial situation with savings potential.",18
+INC,I9,"$40,001 - $50,000","Upper middle-class income, can afford a comfortable lifestyle.",19
+INC,I10,"$50,001 - $60,000","Higher income bracket, better financial security and savings capacity.",20
+INC,I11,"$60,001 - $75,000","Upper-income range, financially stable with discretionary spending power.",21
+INC,I12,"$75,001+","High income, well above the average household income level.",22
+INC,I13,DON'T KNOW,Respondent did not provide income information.,
+INC,I14,REFUSED,Respondent refused to answer.,
+MAG,A1,≤ 29 YEARS,Mother is 29 years old or younger.,
+MAG,A2,≥ 30 YEARS,Mother is 30 years old or older.,

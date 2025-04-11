@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1112.0850                               -->
+<workbook original-version='18.1' source-build='2024.3.1 (20243.24.1112.0850)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Statistical Analysis (1.8_ DV&amp;S Influenza Statistical Analysis - Yarisel Velacanto)' inline='true' name='federated.06mww580aibzv6154wznt0h62tba' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='1.8_ DV&amp;S Influenza Statistical Analysis - Yarisel Velacanto' name='excel-direct.11wx7x313is16k1ft46wy1494w2d'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/lesir/Desktop/YVC/Data Analytics (CF)/Data Visualization &amp; Storytelling 2.1 - 2.10/Data Group/1.8_ DV&amp;S Influenza Statistical Analysis (Year) - Yarisel Velacanto.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.11wx7x313is16k1ft46wy1494w2d' name='Statistical Analysis' table='[&apos;Statistical Analysis$&apos;]' type='table'>
+          <columns gridOrigin='A1:C25:no:A1:C25:5' header='yes' lost='0' outcome='1' processed='22'>
+            <column datatype='string' name='Data Spread Data Name Sample or Population? Normal Distribution?' ordinal='0' />
+            <column datatype='real' name='Column1 Variable 1 Flu Shot Rate Population Approximate' ordinal='1' />
+            <column datatype='real' name='Column2 Variable 2 Influenza Mortality Rate Population Approximate' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Statistical Analysis]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C25:no:A1:C25:5&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>22</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data Spread Data Name Sample or Population? Normal Distribution?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Data Spread Data Name Sample or Population? Normal Distribution?]</local-name>
+            <parent-name>[Statistical Analysis]</parent-name>
+            <remote-alias>Data Spread Data Name Sample or Population? Normal Distribution?</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Statistical Analysis_BD9DE52F0F67457087FCE4896E4655EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Column1 Variable 1 Flu Shot Rate Population Approximate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Column1 Variable 1 Flu Shot Rate Population Approximate]</local-name>
+            <parent-name>[Statistical Analysis]</parent-name>
+            <remote-alias>Column1 Variable 1 Flu Shot Rate Population Approximate</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Statistical Analysis_BD9DE52F0F67457087FCE4896E4655EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Column2 Variable 2 Influenza Mortality Rate Population Approximate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Column2 Variable 2 Influenza Mortality Rate Population Approximate]</local-name>
+            <parent-name>[Statistical Analysis]</parent-name>
+            <remote-alias>Column2 Variable 2 Influenza Mortality Rate Population Approximate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Statistical Analysis_BD9DE52F0F67457087FCE4896E4655EB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Flu Shot Rate' datatype='real' name='[Column1 Variable 1 Flu Shot Rate Population Approximate]' role='measure' type='quantitative' />
+      <column caption='Influenza Mortality Rate' datatype='real' name='[Column2 Variable 2 Influenza Mortality Rate Population Approximate]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Influenza Mortality Rate (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Column2 Variable 2 Influenza Mortality Rate Population Approximate]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot; Low Mortality&quot;'>
+            <value>-5.1042365384629438</value>
+          </bin>
+          <bin default-name='false' value='&quot;High Mortality&quot;'>
+            <value>6.7258691915241684</value>
+            <value>8.7469625989171202</value>
+          </bin>
+          <bin default-name='false' value='&quot;Medium Mortality&quot;'>
+            <value>0.8108163265306122</value>
+            <value>1.0</value>
+            <value>2.083333333333333</value>
+            <value>2.957526432496778</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Statistical Analysis' datatype='table' name='[__tableau_internal_object_id__].[Statistical Analysis_BD9DE52F0F67457087FCE4896E4655EB]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Influenza Mortality Rate (group)]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot; Low Mortality&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;High Mortality&quot;</bucket>
+            </map>
+            <map to='#f59b00'>
+              <bucket>&quot;Medium Mortality&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Statistical Analysis' id='Statistical Analysis_BD9DE52F0F67457087FCE4896E4655EB'>
+            <properties context=''>
+              <relation connection='excel-direct.11wx7x313is16k1ft46wy1494w2d' name='Statistical Analysis' table='[&apos;Statistical Analysis$&apos;]' type='table'>
+                <columns gridOrigin='A1:C25:no:A1:C25:5' header='yes' lost='0' outcome='1' processed='22'>
+                  <column datatype='string' name='Data Spread Data Name Sample or Population? Normal Distribution?' ordinal='0' />
+                  <column datatype='real' name='Column1 Variable 1 Flu Shot Rate Population Approximate' ordinal='1' />
+                  <column datatype='real' name='Column2 Variable 2 Influenza Mortality Rate Population Approximate' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Flu Shot Rate vs. Influenza Mortality by Risk Category Bubble Chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Lexend'>Flu Shot Rate vs. Influenza Mortality by Risk Category</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Lexend' fontsize='12'>This bubble chart visualizes flu shot rates (per 100,000) against influenza mortality rates, with bubble sizes representing different data points. The color groups represent mortality risk categories (Low, Medium, High, and Other), providing insights into variations across flu shot coverage and mortality levels.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Statistical Analysis (1.8_ DV&amp;S Influenza Statistical Analysis - Yarisel Velacanto)' name='federated.06mww580aibzv6154wznt0h62tba' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06mww580aibzv6154wznt0h62tba'>
+            <column caption='Flu Shot Rate' datatype='real' name='[Column1 Variable 1 Flu Shot Rate Population Approximate]' role='measure' type='quantitative' />
+            <column caption='Influenza Mortality Rate' datatype='real' name='[Column2 Variable 2 Influenza Mortality Rate Population Approximate]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Influenza Mortality Rate (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Column2 Variable 2 Influenza Mortality Rate Population Approximate]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot; Low Mortality&quot;'>
+                  <value>-5.1042365384629438</value>
+                </bin>
+                <bin default-name='false' value='&quot;High Mortality&quot;'>
+                  <value>6.7258691915241684</value>
+                  <value>8.7469625989171202</value>
+                </bin>
+                <bin default-name='false' value='&quot;Medium Mortality&quot;'>
+                  <value>0.8108163265306122</value>
+                  <value>1.0</value>
+                  <value>2.083333333333333</value>
+                  <value>2.957526432496778</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[Column1 Variable 1 Flu Shot Rate Population Approximate]' derivation='None' name='[none:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Column2 Variable 2 Influenza Mortality Rate Population Approximate]' derivation='None' name='[none:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Column1 Variable 1 Flu Shot Rate Population Approximate]' derivation='Sum' name='[sum:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Column2 Variable 2 Influenza Mortality Rate Population Approximate]' derivation='Sum' name='[sum:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.06mww580aibzv6154wznt0h62tba].[none:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.06mww580aibzv6154wznt0h62tba].[none:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.06mww580aibzv6154wznt0h62tba].[none:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]</column>
+            <column>[federated.06mww580aibzv6154wznt0h62tba].[none:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.06mww580aibzv6154wznt0h62tba].[sum:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]' scope='cols' value='Flu Shot Rate (per 100,000)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.06mww580aibzv6154wznt0h62tba].[sum:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]' value='Lexend' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.06mww580aibzv6154wznt0h62tba].[sum:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]' value='Lexend' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.06mww580aibzv6154wznt0h62tba].[Influenza Mortality Rate (group)]' />
+              <size column='[federated.06mww580aibzv6154wznt0h62tba].[sum:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Lexend' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4832596778869629' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.06mww580aibzv6154wznt0h62tba].[sum:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]</rows>
+        <cols>[federated.06mww580aibzv6154wznt0h62tba].[sum:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]</cols>
+      </table>
+      <simple-id uuid='{25590EF9-E585-4B0B-A9C0-79EFE8C32C9C}' />
+    </worksheet>
+    <worksheet name='Flu Shot Rate vs. Mortality Scatterplot'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Lexend'>Flu Shot Rate vs. Mortality Scatterplot</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Lexend' fontsize='12'>This scatterplot shows the relationship between flu shot rates (per 100,000) on the x-axis and influenza mortality rates on the y-axis. A trend line is included, indicating a moderate positive correlation, with the R-squared value suggesting that approximately 41% of the variance in mortality rates is associated with flu shot rates.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Statistical Analysis (1.8_ DV&amp;S Influenza Statistical Analysis - Yarisel Velacanto)' name='federated.06mww580aibzv6154wznt0h62tba' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06mww580aibzv6154wznt0h62tba'>
+            <column caption='Flu Shot Rate' datatype='real' name='[Column1 Variable 1 Flu Shot Rate Population Approximate]' role='measure' type='quantitative' />
+            <column caption='Influenza Mortality Rate' datatype='real' name='[Column2 Variable 2 Influenza Mortality Rate Population Approximate]' role='measure' type='quantitative' />
+            <column-instance column='[Column1 Variable 1 Flu Shot Rate Population Approximate]' derivation='None' name='[none:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Column2 Variable 2 Influenza Mortality Rate Population Approximate]' derivation='None' name='[none:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Column1 Variable 1 Flu Shot Rate Population Approximate]' derivation='Sum' name='[sum:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Column2 Variable 2 Influenza Mortality Rate Population Approximate]' derivation='Sum' name='[sum:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.06mww580aibzv6154wznt0h62tba].[none:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.06mww580aibzv6154wznt0h62tba].[none:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.06mww580aibzv6154wznt0h62tba].[none:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]</column>
+            <column>[federated.06mww580aibzv6154wznt0h62tba].[none:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.06mww580aibzv6154wznt0h62tba].[sum:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]' value='Lexend' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.06mww580aibzv6154wznt0h62tba].[sum:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]' value='Lexend' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Lexend' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.06mww580aibzv6154wznt0h62tba].[sum:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]</rows>
+        <cols>[federated.06mww580aibzv6154wznt0h62tba].[sum:Column1 Variable 1 Flu Shot Rate Population Approximate:qk]</cols>
+      </table>
+      <simple-id uuid='{C7A48D8A-ADA8-4F92-8085-1A12390AB234}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Flu Shot Rate vs. Mortality Scatterplot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{33597EEC-8522-4C44-ACB4-88B2BD82B69F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Flu Shot Rate vs. Influenza Mortality by Risk Category Bubble Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.06mww580aibzv6154wznt0h62tba].[sum:Column2 Variable 2 Influenza Mortality Rate Population Approximate:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.06mww580aibzv6154wznt0h62tba].[Influenza Mortality Rate (group)]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.06mww580aibzv6154wznt0h62tba].[:Measure Names]</field>
+            <field>[federated.06mww580aibzv6154wznt0h62tba].[Influenza Mortality Rate (group)]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ACB00BA2-867C-4D48-B3C4-EBBF3119BE52}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Flu Shot Rate vs. Influenza Mortality by Risk Category Bubble Chart' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAU1klEQVR4nO3deWwc133A8e+bmb14SCJF8dJt3ZLl+4rjuvUdp0HRoChaFAECpID/aJsW
+      DRqgKALEQZqkaIIWaYO0SAs0f6SOkwZx6zi20zpObNe2fMiSY4miDlK8Ka547S73nOP1D4ms
+      LM2SWoocjji/DyCAIt/O++3s/Hau936jtNYaISLKWOkAhFhJS5IArute099Xon0tOz6tdSjf
+      w3K2D6KPMHxugewBaj3KchxnWZe/GLX2cb23D6KPIN7DQkJ5CGQYoQxLrEKypYlIkwQQkSYJ
+      ICItlAnged5KhyAiIpQJoJRa6RBEREgCiEgLZQIIERRJABFpoUwAGZ8ngiIJICItlAkgQyFE
+      UGRLE5EmCSAiTRJARFooE0BOgkVQJAFEpC0qAc6ePkHXyR6WazuVq0AiKNZiXlQqlShpjdYe
+      nqcXnKtZ69xPz/Nqmha5mOV7nlfTmKMwzo9dzvZB9LHc7bXWc/+qWVQCXFw8KAPz4pe1aZrz
+      trasq+9Ka11T+1qX77ouhmFcdQLMrsDljCmM7YPoo9b2pmnW9Ll5njfvtrmoBNh38NbFvEyI
+      0AnlwbZMiBFBCWUCCBGUUCaAXAUSQZEtTUSaJICINEkAEWmhTAC5CiSCcg03wpaPUgqtNc7M
+      JOWxXqzGFhIbtqCM+W+2CVGrUCYAToWRZ7+OZ5dIde7GzqSpjA/S9vE/Idm+c6WjE6tI6BJA
+      a036J9+g6e5PUrf1prnb3m4xx+BTX2DT7z2J1dC0wlGK1SJ05wDlsV6IpajfdvOHxnyYqUZa
+      H32C8Vf/fQWjE6tN6BKgOHic5NabfP+WbL2BysRQwBGJ1Sx0CWCm1uDMTPv+Tbs2aoFRp0LU
+      InQJUL/jdkq9b6N9LoVOHX6ONTc+uAJRidUqdAlgphppvPljDP/oyziFDADac5k89GPK6bOs
+      OfjACkcoVpPQXQUCWHPwQepatzD647/BLRdQCtYcfIjOT/4lSoUuZ8V1LJQJAJDatI/Nn/ra
+      SochVrlQJsDpd37O1NobuWdPE889/TSFxAZ6T7zPZ/7s83SsTa50eGIVCeXxxGtHu+l67WdU
+      VD3tba3cff+vsWfrOgbT/leHhFisRe0BTnX9Cquhhe1bOlmOZ7ncsn8fY+U43cfeR61to0Vl
+      KFvr2bi+cRl6E1Gm9CKqUL33zpvoeCO3HNwPFx9HP98sLtd1F6wacSnHcWqu8lDL8mdLotRa
+      FqWWPq739mGMqdb2syVR5ts2F7UH2NjRwVRRYyiFurhwKYtybTGFsX0QfVyXZVHaNm2jbTEv
+      FCJkQnkSLBNiRFBCmQBCBCWUCSBlUURQZEsTkSYJICJNEkBEWigTQK4CiaCEMgFquUMrxLWQ
+      BBCRFsoEECIokgAi0kKZAPKYVBEUSQARaaFMADkJFkGRBBCRFsoEECIokgAi0kKZAHISLIKy
+      qARwK0XO9PYvdSxzJAFEUBY1J3hkZJSK4+J5HvpiVYj5NlrXdWtavtYax3Guun2ty/c8b64y
+      xHL1cb23D6KP5W4/WxVivm1zEQngMZPLMjyRZd+unXOzt6QqxLXFFMb2QfRxHVaFMNh38Bb2
+      ai2XK8V1r+o5wNjQACPjE1TbecjGL1aDKgng8doLL/DKz1+nFGw8F3qXCTEiIL6HQFrD/jvv
+      YqboIQ8kEquZ7x5gOj3I20c+YMZ2VqR+upRFEUHx3dKa2jbTmlQMjZzj6i9GCnH9qfJVq9h9
+      8ABrU8mqJ8FCrAa+RzhHDr3K0PkMplUf6FgJrTXewHM4gz9DmybE1hA78FlUqjXAKESU+CZA
+      PpfHzuegcU2gwbhnvgeAccc3iCeT6GIa+70vEbvjr1GJpkBjEdHgmwD3PfI4tn3hIRVBXe3X
+      TgFv8n3id30dz7YBUKlWrL1P4PT+gGzDQzzzwss88Nuf4sybP+V8Ocn+znqa997NpnXy3DCx
+      OFWPcHq7jvAfP3qGofRUIIHo0gQq1Q6XPblFrdmJnhmgaeN2mussknGLfCFPz+lT/PLN13nx
+      v34i5yli0apc5dRMZgrceeedKNcOJBCVaEKX0hduQlwayUw/qq6T6aGT9E26rH3/XR79zd+i
+      /eQIhbFTlFPtgcQnViffBJg6N8DRD06yKevw2CceDiQQFWvAWLMbp+8Z2PQJAHR5EufEPxG7
+      7Ys0J1v43J8emGt/753rgYMANY0cFeJS/nsAneCWW/dSKAV3DgBg7vkMbu8PsQ/9OdqywKzD
+      uunzqGRLgFGIKPFNgInJUXIzZcxFDJ+9FkoZWDt+H3fTJ4knEoH2LaLJ9yR454FbWWN6FMqV
+      oOMBZKSpCE6Vq0AaQ0FmKsNKjMuUBBBB8b8RNj3OSKZC67qGwC4xau3hDb6AO/QioKjE1xI7
+      8McXLo0KsUx8EyCWrKOzs5Mdu3cR1C0md+AnUBwj9pFv4jgulj2O/d6Xid39DZSVCigKETW+
+      h0DxZB0Tw2c4+qsTBHMXALzhlzD3/CFKGWitUXUdmNt/B3fwpwFFIKKo6p3gNeuaKWSzvodA
+      Q31neP9Y9+X3rK6NUih1YfrN7CR01bAVnR9ewk6E+LAqg+Fy5IsF8iXT9z7AuqZmdNy5cNzu
+      LU1ZFG3WY+eGUak2PM/DsSu4Qy9htNy14I0uKYuy9O2D6CO0ZVGOH36DofQULe03+CbA2LlR
+      bLMOpVqZnbx1rWVRzFv/CvvIVyC5HhXbgDd9FGvjw5jtH5n3dVe7/EtJWZTw9BHKsiibt+2k
+      SIpyBd9DoB17Dvj89tqoWCOxO7+KnulHz4wS2/m7KKtuyfsR4lK+5wCZTAZlGNQ31AcUhsvL
+      zz/L0PgMhUqS59/Nkcvnef7Fl7GlQIRYRr57gL0338Hm7DS5oh1MVQinxLq19bzX1UM83cP+
+      nev456eepZjuZ9ed97GrRYZFiOVR5SqQy4s/fJqXfnGIQAZDKM13v/t96u1x8p7HS68do70p
+      RcKKUyytzHAMEQ1VzkAMbr7vPgaGJ4PZAxj1fPM7/zL3X9u2icViF/8nwyLE8qlaGe7UsW5G
+      egYoBhHFxVlg/v+CCEBEVdU9wMYtHcTXOgR59O2NH8E++R3schFabsTa/0dyJUgsq6qjQYeG
+      hkmk6gIri+JNHMXu+kdit36R+Ef+AaPpRuxDn5OHZYhlVbUwVmMihRGzAhsN6pz8V2K3fxkV
+      X4M6+z3c4f/GHT+MN/Z6QBGIKKr6Ba+Uy8DwWGB7AO05qPg67Pe+hNd0O7G7/hZr16exj34F
+      L9cXUBQiaqpu362bt9Kxfm1wgazbh9P1LVTDFoyW20B7eGNvEL/n7+YKZgmx1OYdiDE+lsZd
+      qNFSBbL3CSr/+wSg8FyNd/4NrN2fRjVsR9vZACIQUeS7Bzhz/Aj9o+dpamkJ7BBIWSniH/02
+      2DOYzQeIf/TbmJsexR15CWPD3QFFIaLG98s9m8tjl102b2kL9kHCVgPWgc/i9P0nbr4fXRgB
+      ZWAd/IsgoxAR4psAN912B5Mv/Q99/UPs2LszsKfEKKUwOx/Aa7oVle/B2PgwRv2mgHoXUeSb
+      AFY8gWkl2L7zhpV5RJJVj9ly+0r0LCLG9wgnOzVJKpXgbN/gipRFESIovnuAYiFPY/MG1hiJ
+      wB+QUSoWyWUzrGtqJhaPS40gsax8E6Bt41baNgYbiNaaob6zOHaFRCpF/5lTNLW00NLWEWwg
+      IlIW9QU/0HuK7jP9S1oVopCfwXUdtu3aw4b2Tnbuv5GJdHpRk7mFuFqLusflmXFShoenPfAu
+      TDx2HOeKx5vOVl7wPG9uUNvsLP3L22ampkjVN8xVgHAch1giwUwuS6qu/kOHQpcvY7YqxewD
+      tqvFMbsM13XnfvZr6/d7x3GuqCRR7b3Mro/LB/JdHsely7h0Hc0Xx+wyLq12MPtztWUbhvGh
+      yh3zxXHp72erZ1R7j5cvw3GcuXV7NeupUqnMFSiYL47Z3/tVH5lvPV3+s18ci0qASj5LUSfY
+      ogzUxWX9/wSWKzmOs+Ds/3XNzYwND9Ha3jHXvlIq0di4BmOBihNKqZqqCxiGUXNViFr7ME2z
+      pvZXs46upX2t8QfRR63tHccJpirEQnbvv2kxL5tXqq6eRDLFmRPHSSSTFPN5Wjs6F9z4hbgW
+      K/EgeF9KKTo2b8G2K+RzOTq3bFuw1pAQ1yrQkQ7Vad74xYucHZnEUh6H3nidyVyel198nnPT
+      hZUOTqxioUgAZ6KbIbuVtw/9klNH3mTttr38299/jbrNu3n1lVdWOjyxioUiAcy69Zw78Sba
+      cxhKz3D09V/QsWMfv3rjlyTXrF/p8MQqpvQSTLp1XXfe4/WruZowezlMa41dqRBPJPA876qu
+      1tR6tWIxtUFd1w3VVZ3lbh/GmEJzFWg5zAaplMK4+CblJFgst1AcAl3u0psYQiynUCaAEEEJ
+      ZQJcfltbiOUiW5qINEkAEWmSACLSQpkAchVIBCWUCSDTIEVQJAFEpIUyAYQIiiSAiLRQJoA8
+      FEMERRJARNqiEmCo7wyHjx5b0rIol5KTYBGUmoZDa9ehb3CIdQ2NdNY3o7WH5/mXq7hUrbV9
+      ZsuKXK3FLP/yEidL3cf13j6IPpa7/WwZlPm2zZoSQJkW27dto/vYUUiupb2lmdlxawuN3a9l
+      4oPWuubJG8s9IabWPlZD+yD6qLV9KCbE7L3xlsW8TIjQkZNgEWmSACLSQpkAMiFGBEW2NBFp
+      kgAi0iQBRKSFMgFkQowISigTQIighDIB5CqQCIpsaSLSJAFEpEkCiEgLZQLIVSARlFAmgEyI
+      EUGRBBCRFsoEECIokgAi0kKZADIfQARlUQng2iV6+waXOpY5kgAiKLVVhdAexWKJyfPnKJYd
+      PM+be4LiUlaF0FpLVYgVbh9EH9ddVQi0JpvLkpnOMDKVY//uXXPjdqQqxLXFFMb2QfRxXVWF
+      UIZJe1s77W3t7KvxG1SIMFr0SbCM2BSrQSi3YjkJFkGRBBCRFsoEkMMrERTZ0kSkSQKISJME
+      EJEWygSQCTEiKKFMgFnac0ifO0ep4qC1S75QopzPksmXVjo0sUqELgFOpbvJljMA5Ic/4Atf
+      /RZjmRKjp97i2Rfe4QdP/4innvo+tY9sEeJKi3pAxnIanO5HrVVMDw6RLTj8weO3cfhYN4/c
+      sokYPejUGtYZLnKnQCyF0CXAQ7sfw7ZtYm0xPLvAoXc87t/RwXimTMeWZra3dJDVjeELXFyX
+      Qr0dGbE67r33HgBagO3bLvy+c6UCEqtO6M4BQK4CieCEMgFkmLUIiiSAiLRQJoAQQZEEEJG2
+      JFeBZifGV+N5Xk0Tmh3HqWlIdK3Ln53MX8vc0oXe41LEFKb2YYxp9jOo9XObz5IkwNVMbF5o
+      0vyl4vF4Te1rXT5Q86T4hSZXL0VMYWsfRB8r/bkFcghU6wSXsLUPoo+wtQ+ijzC8B/PJJ598
+      sualXi23QldXF4ZpUXY02ekp6uvrq2ZwbjJN/+gEaJeYcpku2NQl41UXX8xOcOJkH/GkhVKK
+      iaksDfUp37ZauwwPjZJMGJw83UcqaeJqg4nJaRrq6/xewbmBIay6BKdOdGNYFranyExNUl/f
+      gN9bGBnoIVdWTI0NUlEJSoUZSvkZjEQKy7jyBZmJMQbHprDzU5ybnAHPwS0XcFSMuHXlt9b0
+      +VHODIxiKZvhdAbl2RiGR2am4rueKoUsx7q6sWIWPWf6sBIxjAXWk1spMpEpkp86x2TexqmU
+      wC5R9EwSMZ9vUu0xlj5PJT/N2ZFxYsoDz2Gm5JBKXBlTdjLNmb4hUnGD3oFzxA0PbZpMTeWo
+      r7syJtcucuL4CQzTpKenh3g8iacUkxNTNDTU+76H9LlzpFIJTp88SbKujlyxwkxmipTPtrds
+      d4Ir5RLl3DgnewdoSMV49a0j3H7vQ7RSfffVdaqXxpTJW6cnMTH4jQcfnLeP9NBZhs9XMJ0p
+      jvVN8fjjj1VvrKG/v5/JtEXT+kbeeuddxibyPPqx6q8Z7euDeujpGyYVVxx69zh3P/gYrVXe
+      gmEYnO56B7NhI8b5biaGT9PQeYD77271bW97MNjfS5wyqeYt9He/C3UdPHj/3b7tkwmD412n
+      yHSspzFlcvRMhoILDz/kv56seJyek90YVBhOlzB0jq4zaR57/HH/VaQ9Dr/1OsXEehJuGcOA
+      3PQ4jrWWhx+4z+8F9J/u4u3uIXa0pMjH1pEd7WGiaPDoIw/49tHf18t0yWB6eorOtSneO9zD
+      RNHlkSrvoZQd53TfEIbh0j88SdJ0ePtYHx97/OO+7d1ylldefYXNbe00b99B9/vv0tU7ym33
+      /DobfD64ZTsEKhdnyJU12zpbOD8xyabtuxgf6UfPM4zNUi7jmQLxWJxtnc2MnJ+et4+G5jbq
+      dIG8DXt2bqFvcHTe9vnsBCiD/qE0dckEu3bdQH//UJXWCscukS1oNrU1cn4iy/Zduxnt76Pa
+      Wzj+/mEaNmymnEnjKov6pnasyjQlx//Odrr/JDYp2js3k5meJFbXxLpYhUzB9m0/nSnQvqGR
+      SqXCVK6EFYuxbeN6htNTvu2L+RzbNreT9+qoVwVyZcXuXVvpGxj2fwNeBWUmmJ6cwqkUKFY8
+      YskGWhsUEzP+Q9ArrodXzNLQ0kE5O41nJtjS1sjoeNa3/YbWdrzKDEprRsYzJGMWO2/YTP/Q
+      Od/2ZryezRvqyTlx1tdppvM2e/bs5GzfgG97u1SgeUMb+XKJsaEBYok6OrfuYHJs0HfbU3oZ
+      SzBoralUKsRiMTSgL56QVDsE8lwH29VYpoFhKFxPY81zAuN5Lo7jYZkGyjBwXbfqCfmFWMpY
+      VgzbdojHLVAG3jyvsSuVueV++D1YvodAlUoZMFB4KDOGQqPQYJgYPi9wbBvX8zANA5SBUqAU
+      aNSF312xflxsxyVmGZesJwPX83zXk9Ye5XKFeDyG7XjErnI9eZ6H9lw0Fz4HQyk8Dabp/33p
+      ui5ojae50N5QeJ72Pfn0XAfH08RMg7LtErfMizF5WD6HfVp7VCo2sVgM23GIWeYCn5vGrtiY
+      Vgy7UiYWj6P1heX4bXvLmgBChJ3cCBORFurh0EIstcJMjrJzoTp4c3OTJICIluee+SFNm/dR
+      yGU4eONeOQQS0WLFkmzctBFLaT744JicBItoSY+l2dDWSnosTSk7Lgkgou3/AOXrRVTGDLv8
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Flu Shot Rate vs. Mortality Scatterplot' width='192'>
+      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
+      LWGiycyKAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

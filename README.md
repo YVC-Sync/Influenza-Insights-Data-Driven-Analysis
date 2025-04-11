@@ -1,7 +1,7 @@
 # 🦠 Influenza Insights: A Data-Driven Analysis
 
 **Spotting Trends. Saving Lives. Guiding Smarter Strategies.**
-![Dashboard Preview](./hellaspharm2023 6.png) 
+![Dashboard Preview](./hellaspharm2023-6.png) 
 This project explores flu mortality trends across the U.S. using public datasets — with a strong focus on highlighting vulnerable groups, vaccine gaps, and regional disparities. It’s a mix of data cleaning, statistical analysis, and clear visuals to help make real-world patterns easier to act on.
 
 ---

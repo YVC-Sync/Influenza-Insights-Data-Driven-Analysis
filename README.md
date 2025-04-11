@@ -1,5 +1,4 @@
-# <img src="hellaspharm2023-6.png" alt="Instacart Logo" width="100"> Influenza Insights: A Data-Driven Analysis
-🦠 
+# 🦠 Influenza Insights: A Data-Driven Analysis
 **Spotting Trends. Saving Lives. Guiding Smarter Strategies.**
 
 <img src="hellaspharm2023-6.png" alt="Instacart Logo" width="100">

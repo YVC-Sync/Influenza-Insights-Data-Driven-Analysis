@@ -114,3 +114,5 @@ Influenza Insights: A Data-Driven Analysis
         ├── Docs          # Project write-up PDF
         └── Queries       # SQL scripts for analysis
 ```
+### 🔗 View the Full Case Study  
+[📂 www.yariselvelacanto.com/analyst](http://www.yariselvelacanto.com/analyst)

@@ -45,7 +45,7 @@ Working with large datasets from CDC and NIS required:
 ## 📊 Key Visuals & What They Show
 
 - 🗺️ **Mortality by State:** Who’s hit hardest?  
-- 📈 **Age Breakdown:** Seniors vs. infants — who’s most vulnerable?  
+- 📈 **Age Breakdown:** Seniors vs. infants who’s most vulnerable?  
 - 💉 **Vaccine vs. Mortality:** Are more shots saving lives?  
 - 🧬 **Risk Factors:** How do chronic conditions shift the numbers?
 

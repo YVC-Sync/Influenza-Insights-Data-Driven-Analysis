@@ -86,7 +86,7 @@ Based on this analysis, I’d recommend:
 ```bash
 Influenza Insights: A Data-Driven Analysis
 
-├── 📊 Data Visualization & Storytelling 2.1 – 2.10
+├── Data Visualization & Storytelling 2.1 – 2.10
 │   ├── Data
 │   │   ├── Cleaned       # Cleaned Excel datasets
 │   │   └── Raw           # Original/raw Excel files
@@ -97,7 +97,7 @@ Influenza Insights: A Data-Driven Analysis
 │       ├── Dashboards   # Tableau workbook files (.twb)
 │       └── Extracts     # Tableau extracts (.hyper)
 │ 
-├── 🧪 Preparing & Analyzing Data 1.1 – 1.10 Project
+├── Preparing & Analyzing Data 1.1 – 1.10 Project
 │   ├── Data
 │   │   ├── Cleaned       # Cleaned/merged Excel datasets
 │   │   └── Raw           # Lab test and visit files
@@ -106,7 +106,7 @@ Influenza Insights: A Data-Driven Analysis
 │   │   ├── References    # Research docs (1.4–1.6)
 │   │   └── Submissions   # Final interim report (1.10)
 │ 
-├── 📉 SQL Influenza Mortality Trends
+├── SQL Influenza Mortality Trends
     ├── Data
     │   ├── Clean         # Cleaned CSVs for SQL
     │   └── Raw           # Raw source data

@@ -1,5 +1,5 @@
 # 🦠 Influenza Insights: A Data-Driven Analysis
-**Spotting Trends. Saving Lives. Guiding Smarter Strategies.**
+**Tracking Risk. Supporting Prevention.**
 
 <img src="hellaspharm2023-6.png" alt="Instacart Logo" width="100">
 
@@ -115,4 +115,4 @@ Influenza Insights: A Data-Driven Analysis
         └── Queries       # SQL scripts for analysis
 ```
 ### 🔗 View the Full Case Study  
-[📂 www.yariselvelacanto.com/analyst](http://www.yariselvelacanto.com/analyst)
+[🌐 www.yariselvelacanto.com/data](http://www.yariselvelacanto.com/data)

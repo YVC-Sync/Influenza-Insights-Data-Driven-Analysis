@@ -1,7 +1,7 @@
 # Influenza Insights: A Data-Driven Analysis
 **Tracking Risk. Supporting Prevention.**
 
-<img src="Modern%20healthcare%20in%20abstract%20waves.png" alt="Influenza analysis healthcare illustration" width="200">
+<img src="Influenza Insights Logo.png" alt="Influenza analysis healthcare illustration" width="200">
 
 This project explores flu mortality trends across the U.S. using public datasets, with a strong focus on highlighting vulnerable groups, vaccine gaps, and regional disparities. It’s a mix of data cleaning, statistical analysis, and clear visuals to help make real-world patterns easier to act on.
 

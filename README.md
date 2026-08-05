@@ -1,9 +1,9 @@
-# 🦠 Influenza Insights: A Data-Driven Analysis
+# Influenza Insights: A Data-Driven Analysis
 **Tracking Risk. Supporting Prevention.**
 
-<img src="hellaspharm2023-6.png" alt="Instacart Logo" width="100">
+<img src="Modern%20healthcare%20in%20abstract%20waves.png" alt="Influenza analysis healthcare illustration" width="200">
 
-This project explores flu mortality trends across the U.S. using public datasets — with a strong focus on highlighting vulnerable groups, vaccine gaps, and regional disparities. It’s a mix of data cleaning, statistical analysis, and clear visuals to help make real-world patterns easier to act on.
+This project explores flu mortality trends across the U.S. using public datasets, with a strong focus on highlighting vulnerable groups, vaccine gaps, and regional disparities. It’s a mix of data cleaning, statistical analysis, and clear visuals to help make real-world patterns easier to act on.
 
 ---
 
@@ -84,35 +84,16 @@ Based on this analysis, I’d recommend:
 ## 📁 Repository Structure
 
 ```bash
-Influenza Insights: A Data-Driven Analysis
-
-├── Data Visualization & Storytelling 2.1 – 2.10
-│   ├── Data
-│   │   ├── Cleaned       # Cleaned Excel datasets
-│   │   └── Raw           # Original/raw Excel files
-│   ├── Docs
-│   │   ├── Answers       # PDF lesson submissions (2.1–2.9)
-│   │   └── References    # Notes, summaries, research PDFs
-│   └── Tableau
-│       ├── Dashboards   # Tableau workbook files (.twb)
-│       └── Extracts     # Tableau extracts (.hyper)
-│ 
-├── Preparing & Analyzing Data 1.1 – 1.10 Project
-│   ├── Data
-│   │   ├── Cleaned       # Cleaned/merged Excel datasets
-│   │   └── Raw           # Lab test and visit files
-│   ├── Excel Analysis
-│   │   ├── Project Notes # Reflection docs + milestone summaries
-│   │   ├── References    # Research docs (1.4–1.6)
-│   │   └── Submissions   # Final interim report (1.10)
-│ 
-├── SQL Influenza Mortality Trends
-    ├── Data
-    │   ├── Clean         # Cleaned CSVs for SQL
-    │   └── Raw           # Raw source data
-    └── SQL
-        ├── Docs          # Project write-up PDF
-        └── Queries       # SQL scripts for analysis
+Influenza-Insights-Data-Driven-Analysis
+│
+├── 01 Analysis/                  # Final analysis files and quality checks
+├── 02 Data/                      # Raw, cleaned, and prepared project datasets
+├── 03 SQL Data/                  # SQL-ready data and query files
+├── 04 Visuals/                   # Charts and exported project visuals
+├── 05 Tableau/                   # Tableau workbooks and dashboard files
+├── 06 Reports and Presentation/  # Final report and presentation materials
+├── Modern healthcare in abstract waves.png  # README project image
+└── README.md                     # Project overview, findings, and repository guide
 ```
-### 🔗 View the Full Case Study  
-[🌐 www.yariselvelacanto.com/data](http://www.yariselvelacanto.com/data)
+### 🌐 View the Full Case Study  
+[www.yariselvelacanto.com/influenza-insights-analysis](http://www.yariselvelacanto.com/influenza-insights-analysis)
